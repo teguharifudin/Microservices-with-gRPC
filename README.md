@@ -22,19 +22,6 @@ cd Microservices-with-gRPC
 cd server
 ```
 ```
-touch .env
-```
-```
-NODE_ENV=development
-PORT=50051
-
-DB_HOST=localhost
-DB_USER=postgres
-DB_PASSWORD=
-DB_PORT=5432
-DB_DATABASE=macbookpro
-```
-```
 npm install
 ```
 ```
@@ -43,21 +30,14 @@ npm start
 
 #### Invoke a gRPC request in Postman
 
-Enter URL: http://0.0.0.0:50051/ and import and select protos: ProductService/createProduct
+Enter URL: 0.0.0.0:50051 and import and select protos: ProductService/createProduct
 ```
-{"name":"pencil","price":"49.99"}
+{"name":"white board","price":"9.99"}
 ```
 
 ### Client
 ```
 cd client
-```
-```
-touch .env
-```
-```
-APP_PORT=3000
-GRPC_PORT=50051
 ```
 ```
 npm install

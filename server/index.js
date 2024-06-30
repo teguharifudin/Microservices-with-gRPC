@@ -10,7 +10,7 @@ const {
 } = process.env
 
 const environment = NODE_ENV || 'development'
-const config = require('./knekfile')[environment]
+const config = require('./knexfile')[environment]
 const knex = require('knex')(config)
 
 const productProtoPath = path.join(__dirname, '..', 'protos', 'product.proto')
